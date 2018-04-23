@@ -1,9 +1,12 @@
 package com.kath.labo5;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -33,8 +36,10 @@ public class MainActivity extends AppCompatActivity {
     private void prepareSeries() {
         String TAG = "Mensaje";
         series = new ArrayList<>();
-        series.add(new Serie("Paisaje Bonito 1 :)","13",R.drawable.twd,"Vista muy bonita 1 :)"));
-        series.add(new Serie("Paisaje Bonito 2 :)","13",R.drawable.twd2,"Vista muy bonita 2 :)"));
-        series.add(new Serie("Paisaje Bonito 3 :)","13",R.drawable.twd3,"Vista muy bonita 3 :)"));
+        series.add(new Serie("Deporte Soccer", "Juego de dos equipos de 11 jugadores", R.drawable.soccer, "Deporte de juego en equipo"));
+        series.add(new Serie("Deporte Basketball", "Juego de dos equipos de 5 jugadores", R.drawable.basket, "Deporte de juego en equipo y altura"));
+        series.add(new Serie("Deporte Tenis", "Juego de dos jugadores o entre dos parejas", R.drawable.tenis, "Deporte de estrategia, resistencia y habilidad"));
+
     }
+
 }
